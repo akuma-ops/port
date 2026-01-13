@@ -289,7 +289,7 @@ body {
     position: fixed;
     top: 20px;
     left: 20px;
-    z-index: 1001;
+    z-index: 9999;
     background: var(--bg-secondary);
     border: 2px solid var(--neon-purple);
     width: 50px;
@@ -345,7 +345,7 @@ body {
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(5px);
-    z-index: 99;
+    z-index: 500;
     opacity: 0;
     transition: opacity var(--transition-speed);
 }
@@ -827,6 +827,11 @@ body {
         max-width: 320px;
         box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
         transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        z-index: 1000;
     }
 
     .sidebar.active {
